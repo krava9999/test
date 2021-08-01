@@ -99,7 +99,8 @@ class BasketList{
     _clickCart(){
         const btnCart = document.querySelector(".btn-cart");
         btnCart.addEventListener('click', ()=>{
-            document.querySelector(".cart-box").classList.toggle("invisible");
+            document.querySelector(".cart-box").classList.toggle("invisible")
+            ;
         })
     }
 
