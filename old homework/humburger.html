@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/burger.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center">
+        <h3 class="size-Heading">Размер</h1>
+            <div class="size-input">
+                <!-- <input type="radio" id="radioBig" name="size">
+                <label for="radioBig">Большой</label>
+                <input type="radio" id="radioSmall" name="size">
+                <label for="radioSmall">Маленький</label> -->
+            </div>
+            <h3 class="topping-heading">Топинги</h3>
+            <div class="topping-input">
+                <!-- <input type="checkbox" id="cheese"><label for="cheese">Сыр</label>
+                <input type="checkbox" id="
+                lettuce"><label for="
+                lettuce">Лист салата</label>
+                <input type="checkbox" id="potato"><label for="potato">Картошка</label> -->
+            </div>
+            <h3 class="spice-heading">Соусы</h3>
+            <div class="spice-input">
+                <!-- <input type="checkbox" id="spice"><label for="spice">Приправа</label>
+                <input type="checkbox" id="
+                mayonnaise"><label for="
+                mayonnaise">Майонез</label> -->
+            </div>
+            <button class="btn">Расчитать стоимость</button>
+    </div>
+    <script>
+        class Hamburger {
+            constructor() {
+                this.goods = []; // массив размеров
+                this.fetchProducts();
+                this.render();
+            }
+            fetchProducts() {
+                this.goods = [{
+                        id: 1,
+                        title: "Маленький",
+                        price: 50,
+                        calories: 20,
+                        type: "Size"
+
+                    },
+                    {
+                        id: 2,
+                        title: "Большой",
+                        price: 100,
+                        calories: 40,
+                        type: "Size"
+                    },
+                    {
+                        id: 3,
+                        title: "Сыр",
+                        price: 10,
+                        calories: 20,
+                        type: "topping"
+                    },
+                    {
+                        id: 4,
+                        title: "Салат",
+                        price: 20,
+                        calories: 5,
+                        type: "topping"
+                    },
+                    {
+                        id: 5,
+                        title: "Картофель",
+                        price: 15,
+                        calories: 10,
+                        type: "topping"
+                    },
+                    {
+                        id: 6,
+                        title: "Приправа",
+                        price: 15,
+                        calories: 0,
+                        type: "spice"
+                    },
+                    {
+                        id: 7,
+                        title: "майонез",
+                        price: 20,
+                        calories: 10,
+                        type: "spice"
+                    }
+
+                ];
+            }
+
+            render() {
+                const sizeBox = document.querySelector(".size-input")
+                const toppingBox = document.querySelector(".topping-input")
+                const spiceBox = document.querySelector(".spice-input")
+
+                for (let product of this.goods) {
+                    if (product.type === "Size") {
+                        const item = new ProductItem(product);
+                        sizeBox.insertAdjacentHTML("beforeend", item.renderSize());
+                    } else if (product.type === "topping") {
+                        const item = new ProductItem(product);
+                        toppingBox.insertAdjacentHTML("beforeend", item.renderTopping());
+                    } else if (product.type === "spice") {
+                        const item = new ProductItem(product);
+                        spiceBox.insertAdjacentHTML("beforeend", item.renderSpice());
+                    }
+
+                }
+            }
+            sumAll() {
+                let sumAllItem = 0;
+                let sumAllCalories = 0;
+                const checkedInput = document.querySelectorAll(".render-input");
+                checkedInput.forEach(element => {
+                    if (element.checked === true) {
+                        let itemPrice = +element.getAttribute("data-price");
+                        let itemCalories = +element.getAttribute("data-calories");
+                        sumAllItem += itemPrice;
+                        sumAllCalories += itemCalories;
+                    }
+
+                })
+                alert(`Стоимость бургера состовляет ${sumAllItem}, а его колорийность ${sumAllCalories}`)
+            }
+        }
+
+
+        class ProductItem {
+
+            constructor(product) {
+                this.title = product.title;
+                this.id = product.id;
+                this.price = product.price;
+                this.calories = product.calories;
+                this.type = product.type;
+            }
+
+            renderSize() {
+                return `<input class="render-input" type="radio" id="product_${this.id}" name="${this.type}" data-price=${this.price} data-calories=${this.calories}>
+                <label for="product_${this.id}">${this.title}</label>`
+            }
+            renderTopping() {
+                return `<input  class="render-input" type="checkbox" id="product_${this.id}" name="${this.type}" data-price=${this.price} data-calories=${this.calories}>
+                <label for="product_${this.id}">${this.title}</label>`
+            }
+            renderSpice() {
+                return `<input  class="render-input" type="checkbox" id="product_${this.id}" name="${this.type}" data-price=${this.price} data-calories=${this.calories}>
+                <label for="product_${this.id}">${this.title}</label>`
+            }
+        }
+
+        let list = new Hamburger();
+        const sumBtn = document.querySelector('.btn');
+        sumBtn.addEventListener('click', list.sumAll);
+    </script>
+</body>
+
+</html>
