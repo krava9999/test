@@ -3,37 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Интернет-магазин</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">E-shop</div>
-        <button class="btn-cart" type="button">Корзина</button>
-        <div class="cart-box invisible">
-            <!-- <div class="item-box">
-                <a href="#" class="img-box">
-                    <img src="https://via.placeholder.com/100x80" alt="">
-                </a>
-                <div class="desc-box">
-                    <h4 class="item-title">Мышка</h4>
-                    <p class="item-price">3000р</p>
-                </div>
-                <input class="item-count" type="number" value="1">
-                <a href="#" class="item-delete"> X </a>
-            </div> -->
+    <form action="#">
+        <p class="hide hide-name">Ошибка ввода данных</p>
+        <input id="name" type="text" placeholder="Введите имя">
+        <p class="hide hide-tel">Ошибка ввода данных</p>
+        <input id="tel" type="tel" placeholder="+7(000)000-0000"
+            pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/">
 
-        </div>
-
-    </header>
-    <main>
-        <div class="products"></div>
-    </main>
-
-
-    <script src="js/main.js"></script>
+        <p class="hide hide-email">Ошибка ввода данных</p>
+        <input id="email" type="email" placeholder="email">
+        <textarea name="#" id="#" cols="30" rows="10">
+        </textarea>
+        <a href="#" class="btn">Валидация</a>
+    </form>
 </body>
+<script>
+    /* решал с помощью генераторов регулярных выражений*/
+    let namePattern = /(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)/;
+    let telPattern = /^(?!\+.*\(.*\).*\-\-.*$)(?!\+.*\(.*\).*\-$)(\+[0-9]{1}\([0-9]{3}\)[0-9]{3}[-]{1}[0-9]{4})$/;
+    let mailPattern = /^[a-z]([-a-z])?([a-z])?(\.[a-z])?@[a-z]\.[a-z]$/
+    let inputName = document.getElementById("name");
+    let inputTel = document.getElementById("tel");
+    let inputEmail = document.getElementById("email");
+    let btn = document.querySelector(".btn");
+
+
+    btn.addEventListener('click', () => {
+        if (!namePattern.test(inputName.value)) {
+            inputName.style.border = "2px solid red";
+            document.querySelector('.hide-name').classList.toggle("hide");
+        }
+
+        if (!telPattern.test(inputTel.value)) {
+            inputTel.style.border = "2px solid red";
+            document.querySelector('.hide-tel').classList.toggle("hide");
+
+        }
+        if (!mailPattern.test(inputEmail.value)) {
+            inputEmail.style.border = "2px solid red";
+            document.querySelector('.hide-email').classList.toggle("hide");
+
+        }
+
+    })
+</script>
 
 </html>
