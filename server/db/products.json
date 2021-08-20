@@ -1,0 +1,39 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "ELLERY X M'O CAPSULE",
+    "img_product": "img/item-1.jpg",
+    "price": 7500
+  },
+  {
+    "id_product": 2,
+    "product_name": "Huddi Gucci",
+    "img_product": "img/item-2.jpg",
+    "price": 12800
+  },
+  {
+      "id_product": 3,
+      "product_name": "Supreme jeans",
+      "img_product": "img/item-3.png",
+      "price": 5380
+    },
+    {
+      "id_product": 4,
+      "product_name": "Lacosta robe",
+      "img_product": "img/item-4.png",
+      "price": 10100
+    },
+    {
+      "id_product": 5,
+      "product_name": "Foot big foot",
+      "img_product": "img/item-5.png",
+      "price": 6000
+    },
+    {
+      "id_product": 6,
+      "product_name": "Nice top",
+      "img_product": "img/item-6.png",
+      "price": 37000
+    }
+  
+]

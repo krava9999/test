@@ -1,0 +1,75 @@
+﻿@media (max-width:1023px) {
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+
+    }
+
+    .promo {
+        &__h1 {
+            font-size: 37px;
+        }
+
+        &__h2 {
+            font-size: 28px;
+        }
+    }
+
+    .categories {
+        padding-bottom: 155px;
+        gap: 20px;
+
+        .top-categories {
+
+            .people-categories:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .fetured {
+        .fetured-paragraph {
+            margin-top: 3px;
+        }
+
+        .product-box {
+            margin-top: 73px;
+            gap: 16px;
+        }
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .sub {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 64px;
+        padding-bottom: 140px;
+
+        .sub__left {
+            margin-bottom: 48px;
+        }
+
+        .form-top {
+            .form-desc {
+                line-height: 29px;
+            }
+        }
+
+        .form-down {
+            margin-top: 27px;
+        }
+    }
+
+
+}

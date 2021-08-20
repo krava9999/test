@@ -1,0 +1,78 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 3,
+            "id_product": 4,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/4.png",
+            "price": 10100,
+            "imgPath": "img/item-4.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 3,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-3.png",
+            "price": 5380,
+            "imgPath": "img/item-3.jpg"
+        },
+        {
+            "quantity": 8,
+            "id_product": 6,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-6.png",
+            "price": 37000,
+            "imgPath": "img/item-6.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 5,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-5.png",
+            "price": 6000,
+            "imgPath": "img/item-5.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 6,
+            "product_name": "Nice top",
+            "img_product": "img/item-6.png",
+            "price": 37000,
+            "imgPath": "img/item-6.jpg"
+        },
+        {
+            "quantity": 23,
+            "id_product": 1,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-1.jpg",
+            "price": 7500,
+            "imgPath": "img/item-1.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 2,
+            "product_name": "Huddi Gucci",
+            "img_product": "img/item-2.jpg",
+            "price": 12800,
+            "imgPath": "img/item-2.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 1,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-1.jpg",
+            "price": 7500,
+            "imgPath": "img/item-1.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 1,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "img_product": "img/item-1.jpg",
+            "price": 7500,
+            "imgPath": "img/item-1.jpg"
+        }
+    ]
+}

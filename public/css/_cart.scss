@@ -1,0 +1,204 @@
+﻿.shoping {
+    display: flex;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .cart-box {
+            display: flex;
+            width: 652px;
+            box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+
+            .cart-link {
+                width: 40.5%;
+                display: flex;
+
+                .cart-small-img {
+                    width: 100%;
+                }
+            }
+
+            .cart-char {
+                padding: 22px 0 0 31px;
+                display: flex;
+                width: 59.5%;
+                align-items: baseline;
+                justify-content: space-around;
+
+                .char-left {
+
+                    max-width: 260px;
+
+                    .char-link {
+                        font-family: Lato;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #222222;
+                    }
+
+                    .char-desc {
+                        font-family: Lato;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #575757;
+                        margin-top: 6px;
+
+
+                    }
+
+                    .char-price {
+                        margin-top: 42px;
+
+                        .color-price {
+                            color: $selectColor;
+                        }
+
+
+                    }
+
+                    .char-count {
+                        display: flex;
+
+                        .count-item {
+                            width: 44px;
+                            margin-left: 24px;
+                            text-align: center;
+                            font-family: Lato;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #656565;
+                        }
+
+
+                    }
+
+
+
+
+                }
+            }
+
+        }
+
+        .go-to-cart {
+            display: flex;
+            justify-content: space-between;
+
+            .go-to-cart-btn {
+                border: 1px solid #A4A4A4;
+                padding: 16px 40px;
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
+
+            .go-to-cart-btn:hover {
+                background: #F16D7F;
+                border: 1px solid #FF6A6A;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .shipping-adaptive {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .shipping-heading {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222
+        }
+
+        .shipping-input {
+            margin-top: 20px;
+
+        }
+
+        .btn-get-price {
+            padding: 10px 14px 12px 15px;
+            width: 102px;
+            margin-top: 23px;
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+            border: 1px solid #A4A4A4;
+        }
+
+        .btn-get-price:hover {
+            background: #F16D7F;
+            border: 1px solid #FF6A6A;
+            color: #FFFFFF;
+        }
+
+        .total-price {
+            background: #F5F3F3;
+            padding: 39px 42px 42px 42px;
+            text-align: right;
+            margin-top: 57px;
+
+            .sub-total {
+                font-family: Lato;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+
+
+            }
+
+            .grand-total {
+                margin-top: 12px;
+                font-family: Lato;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+
+                .color-price {
+                    color: $selectColor;
+                    font-weight: 700;
+                }
+            }
+
+            .line-buy {
+                margin-top: 21px;
+                margin-bottom: 17px;
+                color: #E2E2E2;
+            }
+
+            .checkout-btn {
+                margin-top: 17px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                display: block;
+                text-align: center;
+                padding: 12px 42px;
+                background: $selectColor;
+            }
+
+            .checkout-btn:hover {
+                background-color: #D73C3C;
+            }
+        }
+    }
+}
