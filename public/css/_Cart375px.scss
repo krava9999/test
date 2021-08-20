@@ -1,0 +1,75 @@
+﻿@media (max-width:767px) {
+    .shoping {
+
+        &__right {
+            flex-direction: column;
+            margin-top: 65px;
+        }
+
+        .total-price {
+            margin-left: 0px;
+        }
+
+        &__left {
+
+            .cart-box {
+                width: 360px;
+                height: 188px;
+                font-size: 16px;
+                line-height: 19px;
+
+                .cart-char {
+                    padding-top: 12px;
+                    padding-right: 12px;
+                    padding-left: 17px;
+
+                    .char-left {
+
+                        .char-link {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+
+                        .char-desc {
+                            font-size: 14px;
+                            line-height: 17px;
+                            margin-top: 3px;
+
+
+                        }
+
+                        .char-count {
+                            .count-item {
+                                width: 23px;
+                                margin-left: 15px;
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
+                        }
+
+                        .char-price {
+                            margin-top: 25px;
+                        }
+
+
+                    }
+
+                    .btn-close-ico {
+                        width: 10px;
+                    }
+                }
+
+
+            }
+
+            .go-to-cart {
+
+                .go-to-cart-btn {
+                    padding: 9px 17px;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}

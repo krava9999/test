@@ -1,0 +1,28 @@
+﻿@media (max-width: 1135px) {
+
+    .opened-product:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+    .fetured {
+
+
+        .full-description {
+            margin-top: 0;
+        }
+
+        .top-filter {
+            .open-prod-sort-box {
+                margin-left: 0 !important;
+
+            }
+        }
+    }
+
+
+
+
+
+}

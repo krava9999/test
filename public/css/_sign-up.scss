@@ -1,0 +1,116 @@
+﻿.sign-up {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    .sign {
+        display: flex;
+        flex-direction: column;
+
+        &__paragraph {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &__input {
+            margin-top: 20px;
+        }
+
+        .box-checkbox {
+            display: flex;
+            margin: 31px 0 33px 0;
+            gap: 20px;
+
+            &__label {
+                display: flex;
+            }
+
+            &__text {
+                font-family: Lato;
+                font-weight: 300;
+                font-size: 12px;
+                /* 11px вообще не читаемо*/
+                line-height: 13px;
+                color: #000000;
+                margin-left: 10px;
+            }
+
+        }
+
+        &__rule {
+            margin-top: 15px;
+            width: 360px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &__btn {
+
+            text-transform: uppercase;
+            width: 167px;
+            margin-top: 39px;
+            padding: 16px 0;
+            background: #F16D7F;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            text-align: center;
+
+            &:hover {
+                background-color: #D73C3C;
+            }
+
+
+        }
+
+    }
+
+    .loyalty {
+        width: 652px;
+        display: flex;
+        flex-direction: column;
+
+        &__heading,
+        &__desc {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__desc {
+            margin-top: 22px;
+        }
+
+        .list-box-loyalty {
+            margin-top: 21px;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+            &__list {
+
+                font-family: Lato;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+
+                &::before {
+                    content: url(../img/list-ico.svg);
+                    margin-right: 23px;
+                }
+            }
+        }
+    }
+}
